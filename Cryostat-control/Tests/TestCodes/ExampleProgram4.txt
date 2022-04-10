@@ -1,0 +1,11 @@
+# Inicjalizacja wymaganych zmiennych
+# Zmienna określająca okres działania silnika komunikującego się ze sterownikiem LUMEL. Określa maksymalną szybkość wykonania komend programu. Jednostka to ms.
+settings.LumelEnginePeriod = 50
+# Zmienna określająca jak często należy wykonać odczyt wartości temperatury obiektu sterowanego za pomocą sterownika LUMEL. Okres odczytu to ReadEnginePeriod * ReadEngineMultipler
+settings.LumelEngineReadMultipler = 20
+function.repeat(10)
+	# Zwiększanie nastawów
+	pid.change(5, 0, 0)
+end
+
+TakKomendaNaPewnoNieIstnieje.XD = 12

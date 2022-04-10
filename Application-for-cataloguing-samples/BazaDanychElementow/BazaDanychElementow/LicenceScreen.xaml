@@ -1,0 +1,29 @@
+﻿<Window x:Class="BazaDanychElementow.LicenceScreen"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:BazaDanychElementow"
+        mc:Ignorable="d"
+        Title="Baza Danych Elementów - Licencja" Height="500" Width="500"
+        Icon="Icons/database.ico"
+        
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        >
+    <DockPanel>
+        <Grid DockPanel.Dock="Bottom">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Button Content="Zamknij okno" Click="CloseWindow" Grid.Column="2"/>
+        </Grid>
+        <Border BorderBrush="Gainsboro" BorderThickness="1" Margin="2">
+            <ScrollViewer>
+                <TextBlock x:Name="LicenceTextBlock" ScrollViewer.HorizontalScrollBarVisibility="Disabled" ScrollViewer.VerticalScrollBarVisibility="Visible"/>
+            </ScrollViewer>
+        </Border>
+
+    </DockPanel>
+</Window>

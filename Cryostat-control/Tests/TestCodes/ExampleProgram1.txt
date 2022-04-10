@@ -1,0 +1,13 @@
+# Inicjalizacja wymaganych zmiennych
+# Zmienna określająca okres działania silnika komunikującego się ze sterownikiem LUMEL. Określa maksymalną szybkość wykonania komend programu. Jednostka to ms.
+settings.LumelEnginePeriod = 50
+# Zmienna określająca jak często należy wykonać odczyt wartości temperatury obiektu sterowanego za pomocą sterownika LUMEL. Okres odczytu to ReadEnginePeriod * ReadEngineMultipler
+settings.LumelEngineReadMultipler = 20
+# Ustawianie nastawu temperatury na obecną temperaturę pieca. Jest to niewymagane zabezpieczenie na wypadek gdyby piec startował z bardzo wysoką temperaturą a użytkownik jej nie zmieniał w programie od razu.
+temperature.toPresent()
+pid.set(12, 13, 14) # Nastawianie kontrolera pid
+function.repeat(10)
+	# Zwiększanie nastawów
+	pid.change(5, 0, 0)
+	temperature.change(10);
+end

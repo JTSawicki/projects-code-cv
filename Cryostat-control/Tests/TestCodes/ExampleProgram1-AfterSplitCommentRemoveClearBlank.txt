@@ -1,0 +1,8 @@
+settings.LumelEnginePeriod=50
+settings.LumelEngineReadMultipler=20
+temperature.toPresent()
+pid.set(12,13,14)
+function.repeat(10)
+pid.change(5,0,0)
+temperature.change(10);
+end
