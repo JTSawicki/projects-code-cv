@@ -9,12 +9,6 @@ For some reasons i don't want to share full code of cryostat controll app so I s
 
 All code in this repository is shared under licence writed in file licence.txt .
 
-## Cryostat-control
-
-This folder contain data form  software for controlling and data acquisition of cryostat which was my engineer thesis.
-
-For some commercial and library licencing reasons I don't want to share full functional version of code which I have currently on hand of this project so I shared screenshots and some parts of code.
-
 ## Application-for-cataloguing-samples
 
 This folder contain data from my software used to cataloging samples.
@@ -26,6 +20,16 @@ To compile project must be open by VisualStudio 2019.
 Additionaly  it is needed to instal two nuget packages with dependences:
 - MaterialDesignThemes 4.1.0
 - MaterialDesignExtensions 3.3.0
+
+## Cryostat-control
+
+This folder contain data form  software for controlling and data acquisition of cryostat which was my engineer thesis.
+
+For some commercial and library licencing reasons I don't want to share full functional version of code which I have currently on hand of this project so I shared screenshots and some parts of code.
+
+## Example-of-Arduino
+
+Will be filled up soon.
 
 ## Simulated-annealing
 
@@ -44,8 +48,3 @@ Program use following pip libraries:
 - matplotlib
 - colorama
 - numpy
-
-
-## Example-of-Arduino
-
-Will be filled up soon.
