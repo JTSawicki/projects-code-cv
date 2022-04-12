@@ -29,7 +29,8 @@ For some commercial and library licencing reasons I don't want to share full fun
 
 ## Example-of-Arduino
 
-Will be filled up soon.
+This folder contain resources of my Li-pol battery powered lamp.
+Models of 3D printed parts are not included because I can't find files.
 
 ## Simulated-annealing
 
