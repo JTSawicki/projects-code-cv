@@ -1,4 +1,4 @@
-# Repository of my example work listed in CV
+# Repository of my example work
 
 **Author: Jan Sawicki**
 
