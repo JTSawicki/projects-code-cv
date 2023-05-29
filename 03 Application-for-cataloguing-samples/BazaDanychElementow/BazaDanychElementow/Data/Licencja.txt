@@ -1,0 +1,17 @@
+﻿Copyright (C) Jan Sawicki - All Rights Reserved
+Unauthorized use or distribution, via any medium is strictly prohibited.
+Proprietary and confidential.
+This software is provided as it is and author takes no responsibility for program state or operation. 
+Writen by Jan Sawicki <sawtad@gmail.com>, April 2022
+
+Visual elements disclaimer
+Aplication use free incons from www.flaticon.com listed below.
+
+Error icon created by Gregor Cresnar - Flaticon.
+https://www.flaticon.com/free-icons/error - warning.ico file
+Database icon created by Smashicons - Flaticon.
+https://www.flaticon.com/free-icons/database - database.ico file
+Icons created by Freepik - Flaticon.
+https://www.flaticon.com/free-icons/cancel - error.ico file
+https://www.flaticon.com/free-icons/check - confirmation.ico file
+https://www.flaticon.com/free-icons/info - information.ico file
