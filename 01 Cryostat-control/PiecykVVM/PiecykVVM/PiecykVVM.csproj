@@ -1,0 +1,60 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+    <Platforms>AnyCPU;x64;x86</Platforms>
+    <ApplicationIcon>Resources\sound-control.ico</ApplicationIcon>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Resources\HighlightingPattern.xshd" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Resources\HighlightingPattern.xshd">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\sound-control.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Commands\" />
+    <Folder Include="Services\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="CommunityToolkit.Mvvm" Version="8.0.0" />
+    <PackageReference Include="MaterialDesignThemes" Version="4.5.0" />
+    <PackageReference Include="OxyPlot.Wpf" Version="2.1.0" />
+    <PackageReference Include="Serilog" Version="2.11.0" />
+    <PackageReference Include="Serilog.Enrichers.Environment" Version="2.2.0" />
+    <PackageReference Include="Serilog.Enrichers.Thread" Version="3.1.0" />
+    <PackageReference Include="Serilog.Exceptions" Version="8.3.0" />
+    <PackageReference Include="Serilog.Sinks.Debug" Version="2.0.0" />
+    <PackageReference Include="Serilog.Sinks.File" Version="5.0.0" />
+    <PackageReference Include="System.IO.Ports" Version="6.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\LabControlsWPF\LabControlsWPF.csproj" />
+    <ProjectReference Include="..\LabServices\LabServices.csproj" />
+    <ProjectReference Include="..\PiecykM\PiecykM.csproj" />
+  </ItemGroup>
+
+  <Target Name="WorkaroundRemoveAnalayzers" BeforeTargets="GenerateTemporaryTargetAssembly">
+    <ItemGroup>
+      <_TempWorkaroundAnalyzer Include="@(Analyzer)" />
+      <Analyzer Remove="@(Analyzer)" />
+    </ItemGroup>
+  </Target>
+
+  <Target Name="WorkaroundAddAnalayzers" AfterTargets="GenerateTemporaryTargetAssembly">
+    <ItemGroup>
+      <Analyzer Include="@(_TempWorkaroundAnalyzer)" />
+    </ItemGroup>
+  </Target>
+
+</Project>

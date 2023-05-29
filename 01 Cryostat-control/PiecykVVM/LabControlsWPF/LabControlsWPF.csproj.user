@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup />
+  <ItemGroup>
+    <Compile Update="AutoPid\PidInputBox.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="IconedButton.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="MaterialMessageBox.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="MeasureSizeButton.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Plot2D\MultiSeriesPlot.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Plot2D\RealTimePlot.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="TextEditor\CodeEditor.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="AutoPid\PidInputBox.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="IconedButton.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="MaterialMessageBox.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="MeasureSizeButton.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Plot2D\MultiSeriesPlot.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Plot2D\RealTimePlot.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="TextEditor\CodeEditor.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+</Project>
